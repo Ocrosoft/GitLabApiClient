@@ -12,6 +12,9 @@ namespace GitLabApiClient.Models.MergeRequests.Responses
         [JsonProperty("labels")]
         public List<string> Labels { get; } = new List<string>();
 
+        [JsonProperty("draft")]
+        public bool Draft { get; set; }
+
         [JsonProperty("source_branch")]
         public string SourceBranch { get; set; }
 
@@ -23,6 +26,9 @@ namespace GitLabApiClient.Models.MergeRequests.Responses
 
         [JsonProperty("assignee")]
         public Assignee Assignee { get; set; }
+
+        [JsonProperty("reviewers")]
+        public List<Assignee> Reviewers { get; set; }
 
         [JsonProperty("description")]
         public string Description { get; set; }
