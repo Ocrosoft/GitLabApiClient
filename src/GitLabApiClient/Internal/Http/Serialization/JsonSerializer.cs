@@ -11,6 +11,7 @@ namespace GitLabApiClient.Internal.Http.Serialization
             => Settings = new JsonSerializerSettings
             {
                 NullValueHandling = NullValueHandling.Ignore,
+                DateTimeZoneHandling = DateTimeZoneHandling.Local,
                 ContractResolver = new EmptyCollectionContractResolver(),
                 Converters = { new StringEnumConverter() }
             };
