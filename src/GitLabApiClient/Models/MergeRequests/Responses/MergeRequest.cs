@@ -45,6 +45,9 @@ namespace GitLabApiClient.Models.MergeRequests.Responses
         [JsonProperty("merge_commit_sha")]
         public string MergeCommitSha { get; set; }
 
+        [JsonProperty("squash_commit_sha")]
+        public string SquashCommitSha { get; set; }
+
         [JsonProperty("merge_when_pipeline_succeeds")]
         public bool MergeWhenPipelineSucceeds { get; set; }
 
